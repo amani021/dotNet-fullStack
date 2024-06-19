@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="myButton">Click Me!</button>
+
+    <script>
+        const button = document.querySelector('#myButton');
+        button.addEventListener('click', () => {
+            alert('Hello World!')
+        })
+    </script> -->
+
+    <!-- <input id="searchBox" type="text"/>
+
+    <script>
+        const searchBox = document.querySelector('#searchBox');
+        searchBox.addEventListener('keyup', () => {
+            console.log('event triggered')
+        })
+    </script> -->
+
+    <h1>Todo List</h1>
+    <ul>
+        <li>Buy groceries</li>
+        <li>Do laundry</li>
+        <li>Clean house</li>
+    </ul>
+
+    <script>
+        const listItems = document.querySelectorAll('li')
+        listItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('completed')
+            })
+        })
+    </script>
+</body>
+</html>
