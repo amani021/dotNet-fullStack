@@ -3,11 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         console.log('Hello World!')
+    </script> -->
+
+    <!-- <h1>DOM Selector</h1>
+    <div id="hello">
+        Hello World
+    </div>
+    <ul>
+        <li class="green">item 1</li>
+        <li>item 1</li>
+        <li class="green">item 1</li>
+        <li>item 1</li>
+    </ul>
+
+    <script>
+        // console.log(document.getElementById('hello'))
+        
+        // let items = document.getElementsByClassName('green');
+        // console.log(items);
+        
+        // let items = document.getElementsByTagName('li');
+        // console.log(items);
+        
+        // let item = document.querySelector('.green');
+        // console.log(item);
+
+        let items = document.querySelectorAll('.green');
+        console.log(items);
+    </script> -->
+    
+    <h1>DOM Manipulation</h1>
+
+    <!-- <script>
+        // console.dir(document)
+        // console.log(document.domain)
+        // console.log(document.URL)
+        // console.log(document.head)
+        // console.log(document.body)
+        // document.title = 'DOM Manipulation'
+
+        const body = document.body
+        // body.append('hello')
+
+        const div = document.createElement('div')
+        console.log(div)
+        div.innerText = 'Javascript';
+        body.append(div)
+        // body.removeChild(div)
+        // div.remove()
+    </script> -->
+
+    <div>
+        <span id="one" name="First">First Span</span>
+        <span id="two" name="Second">Second Span</span>
+    </div>
+
+    <script>
+        const div = document.querySelector('div')
+        const spanOne = document.getElementById('one')
+        const spanTwo = document.getElementById('two')
+
+        console.log(spanOne.getAttribute('name'))
+
+        spanOne.setAttribute('name', 'abcds')
+        spanOne.removeAttribute('name')
+        spanOne.id = 'alksdjfj'
+
+        spanTwo.classList.add('new-class')
+        spanTwo.classList.remove('new-class')
+
+        spanOne.style.color = 'red'
+        spanTwo.style.backgroundColor = 'blue'
     </script>
+
 </body>
 </html>
