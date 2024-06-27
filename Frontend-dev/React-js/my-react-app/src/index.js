@@ -4,10 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Create an element using HTML tags
+// const greeting = <h1>Hello, World</h1>
+
+// Create a new element using React method
+const greeting = React.createElement('h1', null, 'Hello, World')
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* {greeting} */}
   </React.StrictMode>
 );
 
