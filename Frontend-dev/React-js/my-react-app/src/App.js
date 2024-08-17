@@ -14,7 +14,7 @@ function App() {
   // Save data/tasks in the local storage
   useEffect(()=>{
     // Whenever refresh the page, the tasks will be there by using if condition
-    // if (tasks.length === 0) return;
+    if (tasks.length === 0) return;
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
   useEffect(()=>{
