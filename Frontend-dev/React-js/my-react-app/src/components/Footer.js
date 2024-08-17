@@ -4,7 +4,7 @@ import React from "react";
 class Footer extends React.Component{
 
     render(){
-      return <footer>2024 My website footer</footer>
+      return <footer className="footer">2024</footer>
     }
 }
 
